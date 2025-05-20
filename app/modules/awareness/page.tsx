@@ -1,3 +1,5 @@
+'use client';
+
 import PageLayout from '@/components/PageLayout';
 import { awarenessTopic } from '@/data/awareness';
 import Link from 'next/link';

@@ -1,6 +1,6 @@
 'use client';
 
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useCallback } from 'react';
 import PageLayout from '@/components/PageLayout';
 import Button from '@/components/Button';
 import Breadcrumb from '@/components/Breadcrumb';
@@ -20,7 +20,7 @@ export default function PasswordGamePage() {
   const [showTips, setShowTips] = useState(false);
   const [timeToCrack, setTimeToCrack] = useState<string>('');
 
-  const checkPasswordStrength = (pass: string) => {
+  const checkPasswordStrength = useCallback((pass: string) => {
     const feedbackList: PasswordFeedback[] = [];
     let newScore = 0;
 
@@ -140,7 +140,7 @@ export default function PasswordGamePage() {
     setScore(newScore);
     setFeedback(feedbackList);
     setTimeToCrack(estimateTimeToCrack(entropy));
-  };
+  }, [setScore, setFeedback, setTimeToCrack]);
 
   const calculateEntropy = (pass: string): number => {
     let charsetSize = 0;
