@@ -1,8 +1,7 @@
 'use client';
 
-import { useState, useEffect, useRef } from 'react';
+import { useState, useEffect, useRef, useCallback } from 'react';
 import { MagnifyingGlass, X } from 'phosphor-react';
-import Link from 'next/link';
 import { resourcesData } from '@/data/resources';
 import { glossaryTerms } from '@/data/resources';
 import { modules } from '@/data/modules';
@@ -25,17 +24,17 @@ export default function Search() {
   const inputRef = useRef<HTMLInputElement>(null);
   const router = useRouter();
 
-  const closeSearch = () => {
+  const closeSearch = useCallback(() => {
     setIsOpen(false);
     setSearchQuery('');
     setResults([]);
-  };
+  }, []);
 
-  function handleClickOutside(event: MouseEvent) {
+  const handleClickOutside = useCallback((event: MouseEvent) => {
     if (searchRef.current && !searchRef.current.contains(event.target as Node)) {
       closeSearch();
     }
-  }
+  }, [closeSearch]);
   
   // Close search when clicking outside
   useEffect(() => {
@@ -43,7 +42,7 @@ export default function Search() {
       document.addEventListener('mousedown', handleClickOutside);
       return () => document.removeEventListener('mousedown', handleClickOutside);
     }
-  }, [isOpen]);
+  }, [isOpen, handleClickOutside]);
 
   // Focus input when search opens
   useEffect(() => {
@@ -195,7 +194,7 @@ export default function Search() {
               </div>
             ) : searchQuery ? (
               <p className="text-sm text-muted text-center py-4">
-                No results found for {searchQuery}
+                No results found for "{searchQuery}"
               </p>
             ) : (
               <div className="text-sm text-muted">
