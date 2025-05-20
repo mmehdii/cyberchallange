@@ -9,14 +9,14 @@ export type ProtectionTool = {
   export const protectionTools: ProtectionTool[] = [
    
     {
-      id: 'scenario',
+      id: 'scenarioTool',
       title: 'Privacy Scenarios',
       description: 'Test your privacy knowledge with real-world scenarios',
       content: 'Interactive scenarios to help you make better privacy decisions.',
       imagePath: '/images/privacy.png',
     },
     {
-      id: 'antivirus',
+      id: 'antivirusTool',
       title: 'Antivirus Software',
       description: 'Learn about protecting your devices with antivirus software',
       content: `
@@ -45,7 +45,7 @@ export type ProtectionTool = {
       imagePath: '/images/antivirus.png',
     },
     {
-      id: 'firewall',
+      id: 'firewallTool',
       title: 'Firewall Protection',
       description: 'Understanding how firewalls safeguard your network',
       content: `
@@ -74,7 +74,7 @@ export type ProtectionTool = {
       imagePath: '/images/firewall.png',
     },
     {
-      id: 'password',
+      id: 'passwordTool',
       title: 'Password Security',
       description: 'Best practices for creating and managing strong passwords',
       content: `
@@ -105,7 +105,7 @@ export type ProtectionTool = {
       imagePath: '/images/password-security.png',
     },
     {
-      id: 'privacy',
+      id: 'privacyTool',
       title: 'Privacy Protection',
       description: 'Tools and techniques to safeguard your online privacy',
       content: `

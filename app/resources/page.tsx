@@ -47,8 +47,8 @@ export default function ResourcesPage() {
             <ArrowRight size={20} className="text-muted" />
           </Link>
           
-          <Link 
-            href="/modules/protection/antivirus"
+          {/* <Link 
+            href="/modules/protection/antivirusTool"
             className="p-4 border rounded-xl flex items-center hover:border-[#ed1d26] hover:shadow-sm transition-all"
           >
             <div className="w-12 h-12 bg-[#ed1d26] bg-opacity-10 rounded-full flex items-center justify-center mr-4">
@@ -62,9 +62,10 @@ export default function ResourcesPage() {
             </div>
             <ArrowRight size={20} className="text-muted" />
           </Link>
+        
 
           <Link 
-            href="/modules/protection/firewall"
+            href="/modules/protection/firewallTool"
             className="p-4 border rounded-xl flex items-center hover:border-[#ed1d26] hover:shadow-sm transition-all"
           >
             <div className="w-12 h-12 bg-[#ed1d26] bg-opacity-10 rounded-full flex items-center justify-center mr-4">
@@ -80,7 +81,7 @@ export default function ResourcesPage() {
           </Link>
 
           <Link 
-            href="/modules/protection/privacy"
+            href="/modules/protection/privacyTool"
             className="p-4 border rounded-xl flex items-center hover:border-[#ed1d26] hover:shadow-sm transition-all"
           >
             <div className="w-12 h-12 bg-[#ed1d26] bg-opacity-10 rounded-full flex items-center justify-center mr-4">
@@ -93,7 +94,7 @@ export default function ResourcesPage() {
               </p>
             </div>
             <ArrowRight size={20} className="text-muted" />
-          </Link>
+          </Link> */}
 
           <Link 
             href="/resources/glossary"
