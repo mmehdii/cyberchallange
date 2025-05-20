@@ -66,8 +66,8 @@ export default function Home() {
           <h3 className="text-lg font-bold mb-2">Why Cybersecurity Matters</h3>
           <p className="text-muted max-w-2xl mx-auto">
             Every day, cyber threats become more sophisticated. 
-            By learning these essential skills, you're not just protecting yourself - 
-            you're contributing to a safer digital world for everyone.
+            By learning these essential skills, you&apos;re not just protecting yourself - 
+            you&apos;re contributing to a safer digital world for everyone.
           </p>
         </div>
       </div>

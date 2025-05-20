@@ -194,7 +194,7 @@ export default function Search() {
               </div>
             ) : searchQuery ? (
               <p className="text-sm text-muted text-center py-4">
-                No results found for "{searchQuery}"
+                No results found for &quot;{searchQuery}&quot;
               </p>
             ) : (
               <div className="text-sm text-muted">
