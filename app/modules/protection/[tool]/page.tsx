@@ -27,14 +27,11 @@ export default function ToolPage({ params }: ToolPageProps) {
           <div dangerouslySetInnerHTML={{ __html: tool.content }} />
         </div>
         
-        <div className="mt-6 flex flex-col gap-3">
-          <Button href="/modules/protection">
-            Back to Protection Tools
-          </Button>
-          <Button href="/modules/protection/tips" variant="secondary">
-            View Protection Tips
-          </Button>
-        </div>
+        <div className='w-full flex justify-center items-center '>
+                  <Button href="/resources" variant="secondary" className="mt-4">
+                  Back to Resources
+                </Button>
+                </div>
       </div>
     </PageLayout>
   );

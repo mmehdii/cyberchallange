@@ -1,7 +1,7 @@
 'use client';
 import PageLayout from '@/components/PageLayout';
 import Link from 'next/link';
-import { PlayCircle, FileText, BookOpen, ArrowRight } from 'phosphor-react';
+import { PlayCircle, FileText, BookOpen, ArrowRight, Shield, Lock, Globe, SelectionBackground, ArrowBendDoubleUpRight } from 'phosphor-react';
 
 export default function ResourcesPage() {
   return (
@@ -48,6 +48,54 @@ export default function ResourcesPage() {
           </Link>
           
           <Link 
+            href="/modules/protection/antivirus"
+            className="p-4 border rounded-xl flex items-center hover:border-[#ed1d26] hover:shadow-sm transition-all"
+          >
+            <div className="w-12 h-12 bg-[#ed1d26] bg-opacity-10 rounded-full flex items-center justify-center mr-4">
+              <Shield size={24} weight="fill" className="text-[#ed1d26]" />
+            </div>
+            <div className="flex-1">
+              <h3 className="font-bold mb-1">Antivirus Protection</h3>
+              <p className="text-sm text-muted">
+                Learn about protecting your devices with antivirus software
+              </p>
+            </div>
+            <ArrowRight size={20} className="text-muted" />
+          </Link>
+
+          <Link 
+            href="/modules/protection/firewall"
+            className="p-4 border rounded-xl flex items-center hover:border-[#ed1d26] hover:shadow-sm transition-all"
+          >
+            <div className="w-12 h-12 bg-[#ed1d26] bg-opacity-10 rounded-full flex items-center justify-center mr-4">
+              <Globe size={24} weight="fill" className="text-[#ed1d26]" />
+            </div>
+            <div className="flex-1">
+              <h3 className="font-bold mb-1">Firewall Protection</h3>
+              <p className="text-sm text-muted">
+                Understanding how firewalls safeguard your network
+              </p>
+            </div>
+            <ArrowRight size={20} className="text-muted" />
+          </Link>
+
+          <Link 
+            href="/modules/protection/privacy"
+            className="p-4 border rounded-xl flex items-center hover:border-[#ed1d26] hover:shadow-sm transition-all"
+          >
+            <div className="w-12 h-12 bg-[#ed1d26] bg-opacity-10 rounded-full flex items-center justify-center mr-4">
+              <Lock size={24} weight="fill" className="text-[#ed1d26]" />
+            </div>
+            <div className="flex-1">
+              <h3 className="font-bold mb-1">Privacy Protection</h3>
+              <p className="text-sm text-muted">
+                Learn about privacy best practices and scenarios
+              </p>
+            </div>
+            <ArrowRight size={20} className="text-muted" />
+          </Link>
+
+          <Link 
             href="/resources/glossary"
             className="p-4 border rounded-xl flex items-center hover:border-[#ed1d26] hover:shadow-sm transition-all"
           >
@@ -58,6 +106,21 @@ export default function ResourcesPage() {
               <h3 className="font-bold mb-1">Glossary</h3>
               <p className="text-sm text-muted">
                 Cybersecurity terms and definitions
+              </p>
+            </div>
+            <ArrowRight size={20} className="text-muted" />
+          </Link>
+          <Link 
+            href="/modules/protection/tips"
+            className="p-4 border rounded-xl flex items-center hover:border-[#ed1d26] hover:shadow-sm transition-all"
+          >
+            <div className="w-12 h-12 bg-[#ed1d26] bg-opacity-10 rounded-full flex items-center justify-center mr-4">
+              <ArrowBendDoubleUpRight size={24} weight="fill" className="text-[#ed1d26]" />
+            </div>
+            <div className="flex-1">
+              <h3 className="font-bold mb-1">Tips</h3>
+              <p className="text-sm text-muted">
+                Learn Additional Tips 
               </p>
             </div>
             <ArrowRight size={20} className="text-muted" />

@@ -68,8 +68,9 @@ export default function RecapPage() {
             </div>
           </div>
         </div>
-        
-        <div className="flex flex-col gap-3">
+
+       <div className='grid items-center justify-center w-full'>
+       <div className="flex flex-col gap-3 w-full">
           <Button href="/modules/awareness/quiz">
             Take the Cyber Threats Quiz
           </Button>
@@ -77,6 +78,8 @@ export default function RecapPage() {
             Back to Home
           </Button>
         </div>
+       </div>
+        
       </div>
     </PageLayout>
   );

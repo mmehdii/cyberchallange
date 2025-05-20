@@ -8,6 +8,20 @@ export type ProtectionTool = {
   
   export const protectionTools: ProtectionTool[] = [
     {
+      id: 'tips',
+      title: 'Security Tips',
+      description: 'Essential tips to enhance your cybersecurity posture',
+      content: 'Security tips and best practices for staying safe online.',
+      imagePath: '/images/shield.png',
+    },
+    {
+      id: 'scenario',
+      title: 'Privacy Scenarios',
+      description: 'Test your privacy knowledge with real-world scenarios',
+      content: 'Interactive scenarios to help you make better privacy decisions.',
+      imagePath: '/images/privacy.png',
+    },
+    {
       id: 'antivirus',
       title: 'Antivirus Software',
       description: 'Learn about protecting your devices with antivirus software',

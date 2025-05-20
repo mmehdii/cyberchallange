@@ -7,6 +7,7 @@ export type Module = {
   };
   
   export const modules: Module[] = [
+    
     {
       id: 'phishing',
       title: 'Phishing Email Simulation',
@@ -26,7 +27,7 @@ export type Module = {
       title: 'Privacy Scenario Choices',
       description: 'Understand and make choices about privacy',
       imagePath: '/images/privacy.png',
-      route: '/modules/protection/privacy',
+      route: '/modules/protection/scenarioquiz',
     },
     {
       id: 'quiz',

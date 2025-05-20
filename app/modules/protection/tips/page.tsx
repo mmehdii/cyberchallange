@@ -58,9 +58,7 @@ export default function ProtectionTipsPage() {
           </p>
         </div>
         
-        <Button href="/modules/protection">
-          Back to Protection Tools
-        </Button>
+       
       </div>
     </PageLayout>
   );
