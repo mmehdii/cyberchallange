@@ -24,34 +24,26 @@ export default function Quiz({ questions, onComplete }: QuizProps) {
   const [isCorrect, setIsCorrect] = useState(false);
 
   const handleOptionSelect = (index: number) => {
-    // First set the selected option
     setSelectedOption(index);
     
-    // Check if answer is correct by comparing the selected index to the correct answer
     const correct = index === questions[currentQuestion].correctAnswer;
     
-    // Update state based on correctness
     setIsCorrect(correct);
     setShowFeedback(true);
     
-    // Don't update the score yet - we'll do that when moving to the next question
-    // This prevents double-counting if a user selects multiple options
+    
   };
 
   const handleNextQuestion = () => {
-    // Only update score when moving to next question
     if (isCorrect) {
       setScore(score + 1);
     }
     
-    // Check if this was the last question
     if (currentQuestion < questions.length - 1) {
-      // Move to next question
       setCurrentQuestion(currentQuestion + 1);
       setSelectedOption(null);
       setShowFeedback(false);
     } else {
-      // Quiz is complete - pass final score to parent
       onComplete(score + (isCorrect ? 1 : 0));
     }
   };

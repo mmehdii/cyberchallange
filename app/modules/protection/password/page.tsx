@@ -290,7 +290,7 @@ export default function PasswordGamePage() {
               <p>• Include numbers and special characters</p>
               <p>• Make it at least 12 characters long</p>
               <p>• Avoid common words and patterns</p>
-              <p>• Don't use personal information</p>
+              <p>• Don not use personal information</p>
               <p>• Use a unique password for each account</p>
               <p>• Consider using a password manager</p>
               <p>• Enable two-factor authentication when available</p>

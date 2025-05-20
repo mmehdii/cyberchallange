@@ -37,11 +37,11 @@ export default function QuizPage() {
             
             <div className="mb-4">
               {score === quizQuestions.length ? (
-                <p>Perfect score! You're a cybersecurity expert!</p>
+                <p>Perfect score! You are a cybersecurity expert!</p>
               ) : score >= quizQuestions.length * 0.7 ? (
                 <p>Good job! You have a solid understanding of cybersecurity basics.</p>
               ) : (
-                <p>You're on your way to becoming cyber-savvy. Keep learning!</p>
+                <p>You are on your way to becoming cyber-savvy. Keep learning!</p>
               )}
             </div>
             

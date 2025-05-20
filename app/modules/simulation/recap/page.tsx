@@ -19,7 +19,7 @@ export default function RecapPage() {
         <div className="text-center mb-6">
           <h3 className="text-xl font-bold mb-2">Congratulations!</h3>
           <p>
-            You've successfully completed the phishing email simulation and learned
+            You have successfully completed the phishing email simulation and learned
             valuable skills to protect yourself against phishing attacks.
           </p>
         </div>
@@ -48,7 +48,7 @@ export default function RecapPage() {
               <div>
                 <h4 className="font-medium text-base">Respond Appropriately</h4>
                 <p className="text-sm text-muted">
-                  Never click suspicious links, don't reply to suspected phishing emails, and
+                  Never click suspicious links, do not reply to suspected phishing emails, and
                   contact organizations through official channels.
                 </p>
               </div>

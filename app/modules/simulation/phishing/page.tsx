@@ -106,7 +106,7 @@ export default function PhishingSimulationPage() {
               
               <div className="mt-4 bg-slate-100 p-3 rounded-lg text-sm">
                 <p>
-                  You've identified <span className="font-bold">{identifiedFlags.length}</span> out of {currentEmail.redFlags.length} red flags.
+                  You have identified <span className="font-bold">{identifiedFlags.length}</span> out of {currentEmail.redFlags.length} red flags.
                 </p>
               </div>
             </motion.div>

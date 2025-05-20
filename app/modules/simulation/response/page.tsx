@@ -35,7 +35,7 @@ export default function ResponsePage() {
     >
       <div className="px-4 py-3">
         <p className="mb-4">
-          Now that you've analyzed the email, choose the most appropriate response:
+          Now that you have analyzed the email, choose the most appropriate response:
         </p>
         
         <div className="space-y-3 mb-6">
@@ -92,7 +92,7 @@ export default function ResponsePage() {
               </p>
               <ul className="space-y-1">
                 <li>• Never click links or download attachments from suspicious emails</li>
-                <li>• Don't reply to suspected phishing emails</li>
+                <li>• Do not reply to suspected phishing emails</li>
                 <li>• Contact organizations through their official channels</li>
                 <li>• Report phishing attempts to appropriate parties</li>
               </ul>

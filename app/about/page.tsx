@@ -73,7 +73,7 @@ export default function AboutPage() {
             </a>
           </div>
           <p className="text-sm text-muted">
-            Have questions or feedback? We'd love to hear from you!
+            Have questions or feedback? We would love to hear from you!
           </p>
         </div>
         

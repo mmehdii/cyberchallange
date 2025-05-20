@@ -16,7 +16,7 @@ export default function ModulesPage() {
         <div className="mb-12 text-center">
           <h2 className="text-2xl font-bold mb-6">Why Learn Cybersecurity?</h2>
           <p className="text-lg text-muted mb-8">
-            In today's digital world, cybersecurity knowledge is crucial for everyone. 
+            In todays digital world, cybersecurity knowledge is crucial for everyone. 
             Our interactive modules help you understand and protect against common cyber threats.
           </p>
           
@@ -56,7 +56,7 @@ export default function ModulesPage() {
                 
                 {/* Learning Tips */}
                 <div className="mt-6 p-6 bg-[#ed1d26]/5 rounded-xl shadow-sm group-hover:shadow-md transition-shadow">
-                  <h4 className="font-bold mb-4">What You'll Learn:</h4>
+                  <h4 className="font-bold mb-4">What You will Learn:</h4>
                   <ul className="list-disc list-inside space-y-2 text-muted">
                     {getModuleLearningPoints(module.id)}
                   </ul>
