@@ -1,3 +1,5 @@
+'use client';
+
 import PageLayout from '@/components/PageLayout';
 import { protectionTools } from '@/data/protection';
 import Link from 'next/link';
