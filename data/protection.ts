@@ -7,13 +7,7 @@ export type ProtectionTool = {
   };
   
   export const protectionTools: ProtectionTool[] = [
-    {
-      id: 'tips',
-      title: 'Security Tips',
-      description: 'Essential tips to enhance your cybersecurity posture',
-      content: 'Security tips and best practices for staying safe online.',
-      imagePath: '/images/shield.png',
-    },
+   
     {
       id: 'scenario',
       title: 'Privacy Scenarios',
