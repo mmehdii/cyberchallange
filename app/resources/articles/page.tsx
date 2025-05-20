@@ -1,4 +1,7 @@
+'use client';
+
 import PageLayout from '@/components/PageLayout';
+import { Suspense } from 'react';
 import { resourcesData } from '@/data/resources';
 import ResourceCard from '@/components/ResourceCard';
 import Button from '@/components/Button';
@@ -20,7 +23,9 @@ export default function ArticlesPage() {
         </p>
         
         {articleResources.map(resource => (
-          <ResourceCard key={resource.id} resource={resource} />
+          <Suspense key={resource.id} fallback={<div>Loading...</div>}>
+            <ResourceCard resource={resource} />
+          </Suspense>
         ))}
         
         <div className='w-full flex justify-center items-center '>
