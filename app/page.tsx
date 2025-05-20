@@ -16,7 +16,7 @@ export default function Home() {
       <div className="px-4 py-6">
         <div className="max-w-2xl mx-auto text-center mb-8">
           <p className="text-lg text-muted mb-6">
-            In today's digital world, cybersecurity knowledge is essential. 
+            In todays digital world, cybersecurity knowledge is essential. 
             Our interactive modules help you learn how to protect yourself 
             from common cyber threats in a fun and engaging way.
           </p>
@@ -66,8 +66,8 @@ export default function Home() {
           <h3 className="text-lg font-bold mb-2">Why Cybersecurity Matters</h3>
           <p className="text-muted max-w-2xl mx-auto">
             Every day, cyber threats become more sophisticated. 
-            By learning these essential skills, you&apos;re not just protecting yourself - 
-            you&apos;re contributing to a safer digital world for everyone.
+            By learning these essential skills, you are not just protecting yourself - 
+            you are contributing to a safer digital world for everyone.
           </p>
         </div>
       </div>

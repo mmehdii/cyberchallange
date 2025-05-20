@@ -171,7 +171,7 @@ export default function PasswordGamePage() {
       setFeedback([]);
       setTimeToCrack('');
     }
-  }, [password]);
+  }, [password, checkPasswordStrength]);
 
   const getStrengthColor = () => {
     if (score >= 10) return 'text-green-500';
